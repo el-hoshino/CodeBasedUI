@@ -12,6 +12,7 @@
 		79AC84F71A596F8D007A9A9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AC84F61A596F8D007A9A9F /* Images.xcassets */; };
 		79AC84FA1A596F8D007A9A9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79AC84F81A596F8D007A9A9F /* LaunchScreen.xib */; };
 		79AC85061A596F8D007A9A9F /* CodeBasedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC85051A596F8D007A9A9F /* CodeBasedUITests.swift */; };
+		79AC85101A5970C1007A9A9F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC850F1A5970C1007A9A9F /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		79AC84FF1A596F8D007A9A9F /* CodeBasedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeBasedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AC85041A596F8D007A9A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AC85051A596F8D007A9A9F /* CodeBasedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedUITests.swift; sourceTree = "<group>"; };
+		79AC850F1A5970C1007A9A9F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				79AC84EF1A596F8D007A9A9F /* AppDelegate.swift */,
 				79AC84F11A596F8D007A9A9F /* ViewController.swift */,
+				79AC850F1A5970C1007A9A9F /* MainView.swift */,
 				79AC84F61A596F8D007A9A9F /* Images.xcassets */,
 				79AC84F81A596F8D007A9A9F /* LaunchScreen.xib */,
 				79AC84ED1A596F8D007A9A9F /* Supporting Files */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AC85101A5970C1007A9A9F /* MainView.swift in Sources */,
 				79AC84F21A596F8D007A9A9F /* ViewController.swift in Sources */,
 				79AC84F01A596F8D007A9A9F /* AppDelegate.swift in Sources */,
 			);
@@ -395,6 +399,7 @@
 				79AC850B1A596F8D007A9A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79AC850C1A596F8D007A9A9F /* Build configuration list for PBXNativeTarget "CodeBasedUITests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				79AC850E1A596F8D007A9A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
