@@ -1,0 +1,12 @@
+#Default ignore files with Xcode.
+*~
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+.DS_Store
+
+#Ignore GitEYE Project file
+/.project
+
+#Exclude derived data
+/DerivedData/
