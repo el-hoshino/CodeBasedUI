@@ -13,6 +13,12 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		// Create mainView
+		let mainView = MainView(frame: UIScreen.mainScreen().bounds)
+		
+		// Show mainView
+		self.view.addSubview(mainView)
 	}
 
 	override func didReceiveMemoryWarning() {

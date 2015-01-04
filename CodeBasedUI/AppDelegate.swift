@@ -12,10 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	
+	// Create ViewController in AppDelegate
+	let viewController = ViewController()
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		// Create the application window
+		self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+		
+		// Set window visibility
+		self.window?.makeKeyAndVisible()
+		
+		// Set root view controller for window
+		self.window?.rootViewController = viewController
+		
 		return true
 	}
 
