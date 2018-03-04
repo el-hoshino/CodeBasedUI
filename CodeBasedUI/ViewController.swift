@@ -17,6 +17,9 @@ class ViewController: UIViewController {
 		// Create mainView
 		let mainView = MainView(frame: self.view.bounds)
 		
+		// Auto resize mainView
+		mainView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+		
 		// Show mainView
 		self.view.addSubview(mainView)
 		
