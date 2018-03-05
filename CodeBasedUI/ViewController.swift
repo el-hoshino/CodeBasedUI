@@ -14,6 +14,9 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
+		// Set title
+		self.title = "A ViewController"
+		
 		// Create mainView
 		let mainView = MainView(frame: self.view.bounds)
 		
