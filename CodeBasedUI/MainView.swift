@@ -46,9 +46,9 @@ class MainView: UIView {
 		// Get the desired size for main label from self size through `sizeThatFits(_:)`
 		let labelSize = self.mainLabel.sizeThatFits(self.bounds.size)
 		
-		// Calculate the origin point to put main label at the center of view
+		// Calculate the origin point to put main label at the top center of view
 		let x = (self.bounds.width - labelSize.width) / 2
-		let y = (self.bounds.height - labelSize.height) / 2
+		let y = self.layoutMargins.top //(self.bounds.height - labelSize.height) / 2
 		let labelOrigin = CGPoint(x: x, y: y)
 		
 		// set `frame` to main label to layout it
