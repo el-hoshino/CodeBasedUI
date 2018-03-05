@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	// Create ViewController in AppDelegate with lazy var
 	private(set) lazy var viewController = ViewController()
+	private(set) lazy var navigationController: UINavigationController = {
+		let controller = UINavigationController()
+		controller.viewControllers = [self.viewController]
+		return controller
+	}()
 	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
@@ -26,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		self.window?.makeKeyAndVisible()
 		
 		// Set root view controller for window
-		self.window?.rootViewController = viewController
+		self.window?.rootViewController = navigationController
 		
 		return true
 	}
